@@ -32,7 +32,7 @@ function App() {
       <ProductCard title="bag" price="1000" rating="4"/> */}
       {/* <NoteList2/> */}
       <Counter/>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
