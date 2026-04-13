@@ -9,6 +9,7 @@ import DebugExercise from "./experiments/day3-jsx/DebuggingExercise";
 import Notecard2 from "./experiments/day4-props/notecardprops";
 import ProductCard from "./experiments/day4-props/productCard";
 import NoteList2 from "./experiments/day4-props/noteList2";
+import Counter from "./experiments/day5-state/counter";
 
 
 
@@ -29,7 +30,8 @@ function App() {
       <ProductCard title="Laptop" price="100000" rating="4.5"/>
       <ProductCard title="Iphone 17" price="80000" rating="4.7"/>
       <ProductCard title="bag" price="1000" rating="4"/> */}
-      <NoteList2/>
+      {/* <NoteList2/> */}
+      <Counter/>
       <Footer />
     </div>
   );
