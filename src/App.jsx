@@ -10,7 +10,10 @@ import Notecard2 from "./experiments/day4-props/notecardprops";
 import ProductCard from "./experiments/day4-props/productCard";
 import NoteList2 from "./experiments/day4-props/noteList2";
 import Counter from "./experiments/day5-state/counter";
-
+import ClickEvent from "./experiments/day6-events/events";
+import CountEvent from "./experiments/day6-events/eventCount";
+import ToggleMsg from "./experiments/day6-events/toggle";
+import RandomNumber from "./experiments/day6-events/random";
 
 
 function App() {
@@ -31,7 +34,11 @@ function App() {
       <ProductCard title="Iphone 17" price="80000" rating="4.7"/>
       <ProductCard title="bag" price="1000" rating="4"/> */}
       {/* <NoteList2/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <ClickEvent/>
+      <CountEvent/>
+      <ToggleMsg/>
+      <RandomNumber/>
       {/* <Footer /> */}
     </div>
   );
