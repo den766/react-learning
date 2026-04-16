@@ -14,6 +14,9 @@ import ClickEvent from "./experiments/day6-events/events";
 import CountEvent from "./experiments/day6-events/eventCount";
 import ToggleMsg from "./experiments/day6-events/toggle";
 import RandomNumber from "./experiments/day6-events/random";
+import CounterRevise from "./experiments/day7-revision/revision";
+import NoteListRevise from "./experiments/day7-revision/noteListRevise";
+import TogglemsgRevise from "./experiments/day7-revision/togglemesage";
 
 
 function App() {
@@ -35,10 +38,13 @@ function App() {
       <ProductCard title="bag" price="1000" rating="4"/> */}
       {/* <NoteList2/> */}
       {/* <Counter/> */}
-      <ClickEvent/>
+      {/* <ClickEvent/>
       <CountEvent/>
       <ToggleMsg/>
-      <RandomNumber/>
+      <RandomNumber/> */}
+      <CounterRevise/>
+      <NoteListRevise/>
+      <TogglemsgRevise/>
       {/* <Footer /> */}
     </div>
   );
