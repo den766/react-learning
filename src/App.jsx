@@ -1,3 +1,4 @@
+import {  useState } from "react";
 import Day1Counter from "./experiments/week1/day1-counter/Day1Counter";
 import Footer from "./experiments/week1/day2-components/Footer";
 import Header from "./experiments/week1/day2-components/Header";
@@ -17,9 +18,21 @@ import RandomNumber from "./experiments/week1/day6-events/random";
 import CounterRevise from "./experiments/week1/day7-revision/revision";
 import NoteListRevise from "./experiments/week1/day7-revision/noteListRevise";
 import TogglemsgRevise from "./experiments/week1/day7-revision/togglemesage";
+import TaskInputForm from "./experiments/week1/week2/day1comparchitecture/taskinput";
 
 
 function App() {
+ 
+
+  const [tasks,setTasks] = useState([]);
+
+  function addTask(newTask) {
+   
+    setTasks([...tasks, newTask]);
+     
+  }
+
+  
   return (
     <div>
       {/* <Day1Counter /> */}
@@ -42,10 +55,20 @@ function App() {
       <CountEvent/>
       <ToggleMsg/>
       <RandomNumber/> */}
-      <CounterRevise/>
+      {/* <CounterRevise/>
       <NoteListRevise/>
-      <TogglemsgRevise/>
+      <TogglemsgRevise/> */}
+      {/* <TaskInputForm/> */}
       {/* <Footer /> */}
+      <h1>Task Manager</h1>
+
+      <TaskInputForm onAddTask={addTask} />
+
+      <ul>
+        {tasks.map((task, index) => (
+          <li key={index}>{task}</li>
+        ))}
+      </ul>
     </div>
   );
 }
