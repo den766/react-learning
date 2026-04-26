@@ -20,6 +20,7 @@ import NoteListRevise from "./experiments/week1/day7-revision/noteListRevise";
 import TogglemsgRevise from "./experiments/week1/day7-revision/togglemesage";
 import TaskInputForm from "./experiments/week1/week2/day1comparchitecture/TaskInput";
 import TaskList from "./experiments/week1/week2/day1comparchitecture/taskLists";
+import PlayerCard from "./experiments/week1/week2/day2compcommunication/propsnew";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -63,6 +64,8 @@ function App() {
 
       <TaskInputForm onAddTask={addTask} />
       <TaskList tasks={tasks} onDeleteTask={deleteTask}/>
+      <PlayerCard/>
+      
     </div>
   );
 }
