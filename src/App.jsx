@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Day1Counter from "./experiments/week1/day1-counter/Day1Counter";
 import Footer from "./experiments/week1/day2-components/Footer";
 import Header from "./experiments/week1/day2-components/Header";
@@ -21,17 +21,24 @@ import TogglemsgRevise from "./experiments/week1/day7-revision/togglemesage";
 import TaskInputForm from "./experiments/week1/week2/day1comparchitecture/TaskInput";
 import TaskList from "./experiments/week1/week2/day1comparchitecture/taskLists";
 import PlayerCard from "./experiments/week1/week2/day2compcommunication/propsnew";
+import CounterControls from "./experiments/week1/week2/day3-liftingstateup/counterControls";
+import CounterDisplay from "./experiments/week1/week2/day3-liftingstateup/counterDisplay";
+import SubApp from "./experiments/week1/week2/day3-liftingstateup/stateup";
+import NoteApp from "./experiments/week1/week2/day3-liftingstateup/mininoteAppSearch/noteApp";
+
 
 function App() {
-  const [tasks, setTasks] = useState([]);
 
-  function addTask(newTask) {
-    setTasks([...tasks, newTask]);
-  }
 
-  function deleteTask(indexToDelete) {
-    setTasks((prev) => prev.filter((_, index) => index !== indexToDelete));
-  }
+  // const [tasks, setTasks] = useState([]);
+
+  // function addTask(newTask) {
+  //   setTasks([...tasks, newTask]);
+  // }
+
+  // function deleteTask(indexToDelete) {
+  //   setTasks((prev) => prev.filter((_, index) => index !== indexToDelete));
+  // }
 
   return (
     <div>
@@ -62,10 +69,13 @@ function App() {
       {/* <Footer /> */}
       <h1>Task Manager</h1>
 
-      <TaskInputForm onAddTask={addTask} />
+      {/* <TaskInputForm onAddTask={addTask} />
       <TaskList tasks={tasks} onDeleteTask={deleteTask}/>
-      <PlayerCard/>
+      <PlayerCard/> */}
       
+
+       {/* <SubApp/> */}
+       <NoteApp/>
     </div>
   );
 }
