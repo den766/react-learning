@@ -77,9 +77,9 @@ After mastering these experiments, the next step is building full React applicat
 - [x] Counter State Experiment
 - [x] Toggle UI Experiment
 - [x] Component Structure Practice
-- [ ] List Rendering (`map`)
-- [ ] Controlled Inputs
-- [ ] Form Handling
+- [x] List Rendering (`map`)
+- [x] Controlled Inputs
+- [x] Form Handling
 - [ ] useEffect Basics
 - [ ] API Fetching
 - [ ] Routing
