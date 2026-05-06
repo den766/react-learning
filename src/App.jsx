@@ -29,6 +29,7 @@ import ControlledInput from "./experiments/week1/week2/day4-statedrivenInputs/co
 import FormHandling from "./experiments/week1/week2/day4-statedrivenInputs/formhandling";
 import App2 from "./experiments/week1/week2/day5-crud/main";
 import Effect from "./experiments/week2/day1-sideeffects/sideeffect";
+import Good from "./experiments/week2/day1-sideeffects/goodeffect";
 function App() {
 
 
@@ -81,7 +82,8 @@ function App() {
        {/* <ControlledInput/> */}
        {/* <FormHandling/> */}
        {/* <App2/> */}
-       <Effect/>
+       {/* <Effect/> */}
+       <Good/>
     </div>
   );
 }

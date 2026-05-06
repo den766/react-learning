@@ -5,6 +5,8 @@ function Effect() {
     const [count, setCount] = useState(0);
 
     console.log("1. Render phase");
+    
+    // setCount(count + 1);
 
     useEffect(()=> {
 
@@ -14,7 +16,7 @@ function Effect() {
 
              console.log("clean uP");
          }
-    })
+    } , [count]);
 
      return (
         
