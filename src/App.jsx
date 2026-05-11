@@ -28,10 +28,12 @@ import NoteApp from "./experiments/week1/week2/day3-liftingstateup/mininoteAppSe
 import ControlledInput from "./experiments/week1/week2/day4-statedrivenInputs/controlledInput";
 import FormHandling from "./experiments/week1/week2/day4-statedrivenInputs/formhandling";
 import App2 from "./experiments/week1/week2/day5-crud/main";
-import Effect from "./experiments/week2/day1-sideeffects/sideeffect";
-import Good from "./experiments/week2/day1-sideeffects/goodeffect";
-import Timer from "./experiments/week2/day1-sideeffects/timer";
-import TimerP from "./experiments/week2/day1-sideeffects/timerparent";
+import Effect from "./experiments/week3/day1-sideeffects/sideeffect";
+import Good from "./experiments/week3/day1-sideeffects/goodeffect";
+import Timer from "./experiments/week3/day1-sideeffects/timer";
+import TimerP from "./experiments/week3/day1-sideeffects/timerparent";
+import EffectExp from "./experiments/week3/day2-useeffect/effect";
+import DepArrExperiment from "./experiments/week3/day2-useeffect/dependencyarray";
 function App() {
 
 
@@ -86,7 +88,9 @@ function App() {
        {/* <App2/> */}
        {/* <Effect/> */}
        {/* <Good/> */}
-       <TimerP/>
+       {/* <TimerP/> */}
+       {/* <EffectExp/> */}
+       <DepArrExperiment/>
     </div>
   );
 }
