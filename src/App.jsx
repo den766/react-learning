@@ -34,6 +34,8 @@ import Timer from "./experiments/week3/day1-sideeffects/timer";
 import TimerP from "./experiments/week3/day1-sideeffects/timerparent";
 import EffectExp from "./experiments/week3/day2-useeffect/effect";
 import DepArrExperiment from "./experiments/week3/day2-useeffect/dependencyarray";
+// import InfiniteLoop from "./experiments/week3/day3-infiniteloop/infiniteloop";
+import SafeUseEffect from "./experiments/week3/day3-infiniteloop/safeuseeffect";
 function App() {
 
 
@@ -90,7 +92,10 @@ function App() {
        {/* <Good/> */}
        {/* <TimerP/> */}
        {/* <EffectExp/> */}
-       <DepArrExperiment/>
+       {/* <DepArrExperiment/> */}
+       {/* <InfiniteLoop/> */}
+       <SafeUseEffect/>
+
     </div>
   );
 }
