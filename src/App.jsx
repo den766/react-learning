@@ -36,6 +36,7 @@ import EffectExp from "./experiments/week3/day2-useeffect/effect";
 import DepArrExperiment from "./experiments/week3/day2-useeffect/dependencyarray";
 // import InfiniteLoop from "./experiments/week3/day3-infiniteloop/infiniteloop";
 import SafeUseEffect from "./experiments/week3/day3-infiniteloop/safeuseeffect";
+import FetchUsers from "./experiments/week3/day4-fetchingData/fetchingdata";
 function App() {
 
 
@@ -94,8 +95,8 @@ function App() {
        {/* <EffectExp/> */}
        {/* <DepArrExperiment/> */}
        {/* <InfiniteLoop/> */}
-       <SafeUseEffect/>
-
+       {/* <SafeUseEffect/> */}
+       <FetchUsers/>
     </div>
   );
 }
