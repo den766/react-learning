@@ -80,6 +80,6 @@ After mastering these experiments, the next step is building full React applicat
 - [x] List Rendering (`map`)
 - [x] Controlled Inputs
 - [x] Form Handling
-- [ ] useEffect Basics
-- [ ] API Fetching
+- [x] useEffect Basics
+- [x] API Fetching
 - [ ] Routing
