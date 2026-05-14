@@ -40,6 +40,7 @@ import FetchUsers from "./experiments/week3/day4-fetchingData/fetchingdata";
 import FetchUsers2 from "./experiments/week3/day4-fetchingData/debugging";
 import Uistates from "./experiments/week3/day4-uistates/uistates";
 import EmptyState from "./experiments/week3/day4-uistates/emptystate";
+import FetchUserPosts from "./experiments/week3/day4-uistates/challange";
 function App() {
 
 
@@ -101,7 +102,8 @@ function App() {
        {/* <SafeUseEffect/> */}
        {/* <FetchUsers2/> */}
        {/* <Uistates/> */}
-       <EmptyState/>
+       {/* <EmptyState/> */}
+       <FetchUserPosts/>
     </div>
   );
 }
