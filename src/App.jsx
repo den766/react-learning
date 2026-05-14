@@ -39,6 +39,7 @@ import SafeUseEffect from "./experiments/week3/day3-infiniteloop/safeuseeffect";
 import FetchUsers from "./experiments/week3/day4-fetchingData/fetchingdata";
 import FetchUsers2 from "./experiments/week3/day4-fetchingData/debugging";
 import Uistates from "./experiments/week3/day4-uistates/uistates";
+import EmptyState from "./experiments/week3/day4-uistates/emptystate";
 function App() {
 
 
@@ -99,7 +100,8 @@ function App() {
        {/* <InfiniteLoop/> */}
        {/* <SafeUseEffect/> */}
        {/* <FetchUsers2/> */}
-       <Uistates/>
+       {/* <Uistates/> */}
+       <EmptyState/>
     </div>
   );
 }
