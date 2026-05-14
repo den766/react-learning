@@ -38,6 +38,7 @@ import DepArrExperiment from "./experiments/week3/day2-useeffect/dependencyarray
 import SafeUseEffect from "./experiments/week3/day3-infiniteloop/safeuseeffect";
 import FetchUsers from "./experiments/week3/day4-fetchingData/fetchingdata";
 import FetchUsers2 from "./experiments/week3/day4-fetchingData/debugging";
+import Uistates from "./experiments/week3/day4-uistates/uistates";
 function App() {
 
 
@@ -97,7 +98,8 @@ function App() {
        {/* <DepArrExperiment/> */}
        {/* <InfiniteLoop/> */}
        {/* <SafeUseEffect/> */}
-       <FetchUsers2/>
+       {/* <FetchUsers2/> */}
+       <Uistates/>
     </div>
   );
 }
