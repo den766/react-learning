@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Timer2 from "./timer";
+import Timer3 from "./memoryleaks";
 
 function ToggleShow() {
   const [show, setShow] = useState(true);
@@ -8,7 +9,7 @@ function ToggleShow() {
     <div>
       <button onClick={() => setShow(!show)}>click</button>
 
-      {show && <Timer2 />}
+      {show && <Timer3 />}
     </div>
   );
 }
