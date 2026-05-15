@@ -41,6 +41,8 @@ import FetchUsers2 from "./experiments/week3/day4-fetchingData/debugging";
 import Uistates from "./experiments/week3/day4-uistates/uistates";
 import EmptyState from "./experiments/week3/day4-uistates/emptystate";
 import FetchUserPosts from "./experiments/week3/day4-uistates/challange";
+import CleanUp from "./experiments/week3/day6-cleanupfns/cleanup";
+import CleaningFn from "./experiments/week3/day6-cleanupfns/cleaning";
 function App() {
 
 
@@ -103,7 +105,9 @@ function App() {
        {/* <FetchUsers2/> */}
        {/* <Uistates/> */}
        {/* <EmptyState/> */}
-       <FetchUserPosts/>
+       {/* <FetchUserPosts/> */}
+       {/* <CleanUp/> */}
+       {/* <CleaningFn/> */}
     </div>
   );
 }
