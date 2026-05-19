@@ -44,6 +44,8 @@ import FetchUserPosts from "./experiments/week3/day4-uistates/challange";
 import CleanUp from "./experiments/week3/day6-cleanupfns/cleanup";
 import CleaningFn from "./experiments/week3/day6-cleanupfns/cleaning";
 import ToggleShow from "./experiments/week3/day6-cleanupfns/toggleshow";
+import UseRefPractice from "./experiments/week4/day1-useref/useref";
+import RefPractice1 from "./experiments/week4/day1-useref/userefPractice";
 function App() {
 
 
@@ -110,7 +112,8 @@ function App() {
        {/* <CleanUp/> */}
        {/* <CleaningFn/> */}
        {/* <ToggleShow/> */}
-       
+       {/* <UseRefPractice/> */}
+       <RefPractice1/>
     </div>
   );
 }
