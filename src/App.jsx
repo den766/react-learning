@@ -46,6 +46,7 @@ import CleaningFn from "./experiments/week3/day6-cleanupfns/cleaning";
 import ToggleShow from "./experiments/week3/day6-cleanupfns/toggleshow";
 import UseRefPractice from "./experiments/week4/day1-useref/useref";
 import RefPractice1 from "./experiments/week4/day1-useref/userefPractice";
+import DomAcessusingRef from "./experiments/week4/day1-useref/domaccesusingref";
 function App() {
 
 
@@ -113,7 +114,8 @@ function App() {
        {/* <CleaningFn/> */}
        {/* <ToggleShow/> */}
        {/* <UseRefPractice/> */}
-       <RefPractice1/>
+       {/* <RefPractice1/> */}
+       <DomAcessusingRef/>
     </div>
   );
 }

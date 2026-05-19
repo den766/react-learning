@@ -20,7 +20,7 @@ function RefPractice1() {
 
     <div>
         <h2>state : {count}</h2>
-        <h2>Ref: {countRef.current}</h2>
+        {/* <h2>Ref: {countRef.current}</h2> */}
         <button onClick={updateRef}>
         Update Ref
       </button>
