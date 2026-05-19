@@ -47,6 +47,9 @@ import ToggleShow from "./experiments/week3/day6-cleanupfns/toggleshow";
 import UseRefPractice from "./experiments/week4/day1-useref/useref";
 import RefPractice1 from "./experiments/week4/day1-useref/userefPractice";
 import DomAcessusingRef from "./experiments/week4/day1-useref/domaccesusingref";
+import RefVsVariable from "./experiments/week4/day1-useref/normalvariablevsref";
+import FocusInput from "./experiments/week4/day1-useref/challenge";
+import PreviousCountTracker from "./experiments/week4/day1-useref/challenge";
 function App() {
 
 
@@ -115,7 +118,10 @@ function App() {
        {/* <ToggleShow/> */}
        {/* <UseRefPractice/> */}
        {/* <RefPractice1/> */}
-       <DomAcessusingRef/>
+       {/* <DomAcessusingRef/> */}
+       {/* <RefVsVariable/> */}
+       {/* <FocusInput/> */}
+       <PreviousCountTracker/>
     </div>
   );
 }
