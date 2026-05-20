@@ -52,6 +52,8 @@ import FocusInput from "./experiments/week4/day1-useref/challenge";
 import PreviousCountTracker from "./experiments/week4/day1-useref/challenge";
 import RefVsState from "./experiments/week4/day2-state_vs_ref/statevsref";
 import RenderCounter from "./experiments/week4/day2-state_vs_ref/rendercounter";
+import ControlledInput1 from "./experiments/week4/day2-state_vs_ref/controlledvsuncontrolled";
+import UnControlledInput from "./experiments/week4/day2-state_vs_ref/controlledvsuncontrolled";
 function App() {
 
 
@@ -125,7 +127,9 @@ function App() {
        {/* <FocusInput/> */}
        {/* <PreviousCountTracker/> */}
        {/* <RefVsState/> */}
-       <RenderCounter/>
+       {/* <RenderCounter/> */}
+       {/* <ControlledInput1/> */}
+       <UnControlledInput />
     </div>
   );
 }
