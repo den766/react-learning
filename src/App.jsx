@@ -50,6 +50,7 @@ import DomAcessusingRef from "./experiments/week4/day1-useref/domaccesusingref";
 import RefVsVariable from "./experiments/week4/day1-useref/normalvariablevsref";
 import FocusInput from "./experiments/week4/day1-useref/challenge";
 import PreviousCountTracker from "./experiments/week4/day1-useref/challenge";
+import RefVsState from "./experiments/week4/day2-state_vs_ref/statevsref";
 function App() {
 
 
@@ -121,7 +122,8 @@ function App() {
        {/* <DomAcessusingRef/> */}
        {/* <RefVsVariable/> */}
        {/* <FocusInput/> */}
-       <PreviousCountTracker/>
+       {/* <PreviousCountTracker/> */}
+       <RefVsState/>
     </div>
   );
 }

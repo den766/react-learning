@@ -59,7 +59,7 @@ function PreviousCountTracker() {
   return (
     <div>
       <h1>current:{count}</h1>
-      <h1>previous:{previousCount.current}</h1>
+      {/* <h1>previous:{previousCount.current}</h1> */}
       <button onClick={UpdateCount}>Inc Count</button>
       {/* <button onClick={updateRef}>previous count</button> */}
     </div>
