@@ -51,6 +51,7 @@ import RefVsVariable from "./experiments/week4/day1-useref/normalvariablevsref";
 import FocusInput from "./experiments/week4/day1-useref/challenge";
 import PreviousCountTracker from "./experiments/week4/day1-useref/challenge";
 import RefVsState from "./experiments/week4/day2-state_vs_ref/statevsref";
+import RenderCounter from "./experiments/week4/day2-state_vs_ref/rendercounter";
 function App() {
 
 
@@ -123,7 +124,8 @@ function App() {
        {/* <RefVsVariable/> */}
        {/* <FocusInput/> */}
        {/* <PreviousCountTracker/> */}
-       <RefVsState/>
+       {/* <RefVsState/> */}
+       <RenderCounter/>
     </div>
   );
 }
