@@ -60,6 +60,10 @@ import Toggle3 from "./experiments/week4/day3-customhooks/customtoggle";
 import ToggleNew3 from "./experiments/week4/day4-realcustomhooks/customhooknew";
 import MenuOpenClose from "./experiments/week4/day4-realcustomhooks/menuopenclose";
 import UserInput from "./experiments/week4/day4-realcustomhooks/useinput";
+import Welcome from "./experiments/week4/day4-realcustomhooks/TsDay1/welcome";
+import UserCard from "./experiments/week4/day4-realcustomhooks/TsDay1/usercard";
+import User1 from "./experiments/week4/day4-realcustomhooks/TsDay1/user";
+import Profile from "./experiments/week4/day4-realcustomhooks/TsDay1/profile";
 function App() {
 
 
@@ -141,7 +145,10 @@ function App() {
        {/* <Toggle3/> */}
        {/* <ToggleNew3/> */}
        {/* <MenuOpenClose/> */}
-       <UserInput/>
+       {/* <UserInput/> */}
+       {/* <Welcome/>
+       <User1/> */}
+       <Profile/>
     </div>
   );
 }
