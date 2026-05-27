@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-function useToggle() {
+function useToggle(initialValue = false) {
 
 
-    const [isToggle ,setToggle] = useState(false);
+    const [isToggle ,setToggle] = useState(initialValue);
 
     function flipToggle() {
 

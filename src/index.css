@@ -109,3 +109,19 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+.container{
+   
+   display:  flex; 
+   justify-content: center;
+   height: 500px;
+   align-items: center;
+}
+
+.OpenMenu{
+
+   height: 300px;
+   width: 300px;
+   background-color: #60EFFF;
+}

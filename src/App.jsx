@@ -57,6 +57,8 @@ import UnControlledInput from "./experiments/week4/day2-state_vs_ref/controlledv
 import CounterWeek4 from "./experiments/week4/day3-customhooks/customhook";
 import CounterWeek42 from "./experiments/week4/day3-customhooks/customhook2";
 import Toggle3 from "./experiments/week4/day3-customhooks/customtoggle";
+import ToggleNew3 from "./experiments/week4/day4-realcustomhooks/customhooknew";
+import MenuOpenClose from "./experiments/week4/day4-realcustomhooks/menuopenclose";
 function App() {
 
 
@@ -135,7 +137,9 @@ function App() {
        {/* <UnControlledInput /> */}
        {/* <CounterWeek4/>
        <CounterWeek42/> */}
-       <Toggle3/>
+       {/* <Toggle3/> */}
+       {/* <ToggleNew3/> */}
+       <MenuOpenClose/>
     </div>
   );
 }
