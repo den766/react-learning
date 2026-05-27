@@ -59,6 +59,7 @@ import CounterWeek42 from "./experiments/week4/day3-customhooks/customhook2";
 import Toggle3 from "./experiments/week4/day3-customhooks/customtoggle";
 import ToggleNew3 from "./experiments/week4/day4-realcustomhooks/customhooknew";
 import MenuOpenClose from "./experiments/week4/day4-realcustomhooks/menuopenclose";
+import UserInput from "./experiments/week4/day4-realcustomhooks/useinput";
 function App() {
 
 
@@ -139,7 +140,8 @@ function App() {
        <CounterWeek42/> */}
        {/* <Toggle3/> */}
        {/* <ToggleNew3/> */}
-       <MenuOpenClose/>
+       {/* <MenuOpenClose/> */}
+       <UserInput/>
     </div>
   );
 }
