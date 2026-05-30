@@ -64,6 +64,8 @@ import Welcome from "./experiments/week4/day4-realcustomhooks/TsDay1/welcome";
 import UserCard from "./experiments/week4/day4-realcustomhooks/TsDay1/usercard";
 import User1 from "./experiments/week4/day4-realcustomhooks/TsDay1/user";
 import Profile from "./experiments/week4/day4-realcustomhooks/TsDay1/profile";
+import GetUser from "./experiments/week4/day5-usefetchhook/usefetch";
+GetUser
 function App() {
 
 
@@ -148,7 +150,8 @@ function App() {
        {/* <UserInput/> */}
        {/* <Welcome/>
        <User1/> */}
-       <Profile/>
+       {/* <Profile/> */}
+       <GetUser/>
     </div>
   );
 }
