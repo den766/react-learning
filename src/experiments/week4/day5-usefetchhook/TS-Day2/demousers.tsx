@@ -1,12 +1,13 @@
+import DemoUserCard from "./demousercard";
+
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+  description?: string;
+};
 function DemoUsers() {
   // const users  : string[]= ["Jhone" , "Walt" , "Angela" , ];
-
-  type Product = {
-    id: number;
-    name: string;
-    price: number;
-    description?: string;
-  };
 
   const products: Product[] = [
     {
@@ -21,13 +22,13 @@ function DemoUsers() {
     },
   ];
 
-//   const product1: Product = { id: 1, name: "well", price: 3000 };
+  //   const product1: Product = { id: 1, name: "well", price: 3000 };
 
-//   const products2: Product[] = [{ id: 1, name: "well", price: 3000 }];
+  //   const products2: Product[] = [{ id: 1, name: "well", price: 3000 }];
 
-//   console.log(product1);
+  //   console.log(product1);
 
-const featuredProducts : Product[] = [
+  const featuredProducts: Product[] = [
     {
       id: 1,
       name: "Macbook pro",
@@ -38,35 +39,41 @@ const featuredProducts : Product[] = [
       name: "Iphone",
       price: 20000,
     },
-]
+  ];
 
-const cart : Product[] = [ 
-
-      {
+  const cart: Product[] = [
+    {
       id: 1,
       name: "Laptop",
       price: 50000,
-      description: "Awesome"
+      description: "Awesome",
     },
     {
       id: 2,
       name: "Mobile",
       price: 20000,
-      description : "Excellent"
+      description: "Excellent",
     },
-]
+  ];
 
-// const Cap = cart[0].description?.toUpperCase();
-// console.log(Cap);
+  // const Cap = cart[0].description?.toUpperCase();
+  // console.log(Cap);
+
+  function printProduct(cart: Product) {
+    console.log(cart.name);
+  }
+
+  printProduct(cart[0]);
   return (
     <>
-      <h1>Demo Users</h1>
+      {/* <h1>Demo Users</h1>
       {cart.map((user) => (
-        <div>
-          <p key={user.id}>{user.description?.toUpperCase()}</p>
-          {/* <p key={user.id}>{user.catogery}</p> */}
+        <div key={user.id}>
+          <p >{user.name?.toUpperCase()}</p>
+      
         </div>
-      ))}
+      ))} */}
+      <DemoUserCard name="Angela" age={33}/>
     </>
   );
 }
