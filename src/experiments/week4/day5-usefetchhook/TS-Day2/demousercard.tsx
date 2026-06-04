@@ -4,13 +4,13 @@ type userProps = {
      age : number;
 }
 
-function DemoUserCard(props : userProps) {
+function DemoUserCard({name , age }: userProps) {
 
       return (
 
          <div>
-            <h2>{props.name}</h2>
-            <h2>{props.age}</h2>
+            <h2>{name}</h2>
+            <h2>{age}</h2>
          </div>
       )
 }

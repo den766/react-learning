@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Day1Counter from "./experiments/week1/day1-counter/Day1Counter";
 import Footer from "./experiments/week1/day2-components/Footer";
 import Header from "./experiments/week1/day2-components/Header";
@@ -66,10 +67,10 @@ import User1 from "./experiments/week4/day4-realcustomhooks/TsDay1/user";
 import Profile from "./experiments/week4/day4-realcustomhooks/TsDay1/profile";
 import GetUser from "./experiments/week4/day5-usefetchhook/usefetch";
 import DemoUsers from "./experiments/week4/day5-usefetchhook/TS-Day2/demousers";
-GetUser
+GetUser;
+import Home from "./pages/Home";
+import About from "./pages/About";
 function App() {
-
-
   // const [tasks, setTasks] = useState([]);
 
   // function addTask(newTask) {
@@ -112,48 +113,51 @@ function App() {
       {/* <TaskInputForm onAddTask={addTask} />
       <TaskList tasks={tasks} onDeleteTask={deleteTask}/>
       <PlayerCard/> */}
-      
 
-       {/* <SubApp/> */}
-       {/* <NoteApp/> */}
-       {/* <ControlledInput/> */}
-       {/* <FormHandling/> */}
-       {/* <App2/> */}
-       {/* <Effect/> */}
-       {/* <Good/> */}
-       {/* <TimerP/> */}
-       {/* <EffectExp/> */}
-       {/* <DepArrExperiment/> */}
-       {/* <InfiniteLoop/> */}
-       {/* <SafeUseEffect/> */}
-       {/* <FetchUsers2/> */}
-       {/* <Uistates/> */}
-       {/* <EmptyState/> */}
-       {/* <FetchUserPosts/> */}
-       {/* <CleanUp/> */}
-       {/* <CleaningFn/> */}
-       {/* <ToggleShow/> */}
-       {/* <UseRefPractice/> */}
-       {/* <RefPractice1/> */}
-       {/* <DomAcessusingRef/> */}
-       {/* <RefVsVariable/> */}
-       {/* <FocusInput/> */}
-       {/* <PreviousCountTracker/> */}
-       {/* <RefVsState/> */}
-       {/* <RenderCounter/> */}
-       {/* <ControlledInput1/> */}
-       {/* <UnControlledInput /> */}
-       {/* <CounterWeek4/>
+      {/* <SubApp/> */}
+      {/* <NoteApp/> */}
+      {/* <ControlledInput/> */}
+      {/* <FormHandling/> */}
+      {/* <App2/> */}
+      {/* <Effect/> */}
+      {/* <Good/> */}
+      {/* <TimerP/> */}
+      {/* <EffectExp/> */}
+      {/* <DepArrExperiment/> */}
+      {/* <InfiniteLoop/> */}
+      {/* <SafeUseEffect/> */}
+      {/* <FetchUsers2/> */}
+      {/* <Uistates/> */}
+      {/* <EmptyState/> */}
+      {/* <FetchUserPosts/> */}
+      {/* <CleanUp/> */}
+      {/* <CleaningFn/> */}
+      {/* <ToggleShow/> */}
+      {/* <UseRefPractice/> */}
+      {/* <RefPractice1/> */}
+      {/* <DomAcessusingRef/> */}
+      {/* <RefVsVariable/> */}
+      {/* <FocusInput/> */}
+      {/* <PreviousCountTracker/> */}
+      {/* <RefVsState/> */}
+      {/* <RenderCounter/> */}
+      {/* <ControlledInput1/> */}
+      {/* <UnControlledInput /> */}
+      {/* <CounterWeek4/>
        <CounterWeek42/> */}
-       {/* <Toggle3/> */}
-       {/* <ToggleNew3/> */}
-       {/* <MenuOpenClose/> */}
-       {/* <UserInput/> */}
-       {/* <Welcome/>
+      {/* <Toggle3/> */}
+      {/* <ToggleNew3/> */}
+      {/* <MenuOpenClose/> */}
+      {/* <UserInput/> */}
+      {/* <Welcome/>
        <User1/> */}
-       {/* <Profile/> */}
-       {/* <GetUser/> */}
-       <DemoUsers/>
+      {/* <Profile/> */}
+      {/* <GetUser/> */}
+      {/* <DemoUsers/> */}
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+      </Routes>
     </div>
   );
 }
