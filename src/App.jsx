@@ -70,6 +70,7 @@ import DemoUsers from "./experiments/week4/day5-usefetchhook/TS-Day2/demousers";
 GetUser;
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -157,6 +158,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact/>}></Route>
       </Routes>
     </div>
   );
