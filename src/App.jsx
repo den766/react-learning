@@ -71,6 +71,7 @@ GetUser;
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import NavBar from "./experiments/week5/day2/navbar";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -155,10 +156,11 @@ function App() {
       {/* <Profile/> */}
       {/* <GetUser/> */}
       {/* <DemoUsers/> */}
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </div>
   );
