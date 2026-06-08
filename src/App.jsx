@@ -72,6 +72,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NavBar from "./experiments/week5/day2/navbar";
+import Settings from "./pages/settings";
+import Profile2 from "./pages/profile";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -161,6 +163,8 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/profile" element={<Profile2/>}></Route>
+        <Route path="/settings" element={<Settings/>}></Route>
       </Routes>
     </div>
   );

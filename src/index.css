@@ -125,3 +125,7 @@ code {
    width: 300px;
    background-color: #60EFFF;
 }
+
+.active {
+  font-weight: bold;
+}

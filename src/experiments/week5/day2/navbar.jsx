@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link  , NavLink} from "react-router-dom";
 function NavBar() {
 
      return (
@@ -7,7 +7,9 @@ function NavBar() {
 
         <Link to={"/"}>Home</Link>
         <Link to={"about"}>About</Link>
-         <Link to={"contact"}>Contact</Link>
+         <NavLink to={"contact"}>Contact</NavLink>
+         <NavLink to={"profile"}>Profile</NavLink>
+         <Link to={"settings"}>settings</Link>
 
          </nav>
      )
