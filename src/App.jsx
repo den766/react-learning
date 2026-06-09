@@ -76,6 +76,10 @@ import Settings from "./pages/settings";
 import Profile2 from "./pages/profile";
 import DynamicRouter from "./experiments/week5/day3-dynamicrouting/dynamicrouting";
 import User from "./pages/user";
+import ProductPage from "./experiments/week5/day3-dynamicrouting/productdynamic";
+import ProductsD from "./pages/product";
+import RoomRouting from "./experiments/week5/day3-dynamicrouting/hotelroomsrouting";
+import Room from "./pages/rooms";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -86,6 +90,13 @@ function App() {
   // function deleteTask(indexToDelete) {
   //   setTasks((prev) => prev.filter((_, index) => index !== indexToDelete));
   // }
+
+  const rooms = [
+    { id: 101, type: "Deluxe", price: 2000 },
+    { id: 102, type: "Suite", price: 3500 },
+    { id: 103, type: "Standard", price: 1500 },
+  ];
+
 
   return (
     <div>
@@ -169,11 +180,21 @@ function App() {
         <Route path="/settings" element={<Settings/>}></Route>
       </Routes> */}
 
-      <DynamicRouter />
+      {/* <DynamicRouter />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/user/:id" element={<User/>}></Route>
+      </Routes> */}
+      {/* <ProductPage/>
+      <Routes>
+        <Route path="product/:productid" element={<ProductsD/>}></Route>
+      </Routes> */}
+      <RoomRouting rooms={rooms}/>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/room/:id" element={<Room rooms={rooms}/>}></Route>
       </Routes>
+      
     </div>
   );
 }
