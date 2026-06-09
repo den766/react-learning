@@ -74,6 +74,8 @@ import Contact from "./pages/Contact";
 import NavBar from "./experiments/week5/day2/navbar";
 import Settings from "./pages/settings";
 import Profile2 from "./pages/profile";
+import DynamicRouter from "./experiments/week5/day3-dynamicrouting/dynamicrouting";
+import User from "./pages/user";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -158,13 +160,19 @@ function App() {
       {/* <Profile/> */}
       {/* <GetUser/> */}
       {/* <DemoUsers/> */}
-      <NavBar />
+      {/* <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/profile" element={<Profile2/>}></Route>
         <Route path="/settings" element={<Settings/>}></Route>
+      </Routes> */}
+
+      <DynamicRouter />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/user/:id" element={<User/>}></Route>
       </Routes>
     </div>
   );
