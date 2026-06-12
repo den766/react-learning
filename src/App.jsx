@@ -80,6 +80,7 @@ import ProductPage from "./experiments/week5/day3-dynamicrouting/productdynamic"
 import ProductsD from "./pages/product";
 import RoomRouting from "./experiments/week5/day3-dynamicrouting/hotelroomsrouting";
 import Room from "./pages/rooms";
+import DashBoardLayout from "./experiments/week5/day4-nestedrouting/nestedrouting";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -189,11 +190,21 @@ function App() {
       <Routes>
         <Route path="product/:productid" element={<ProductsD/>}></Route>
       </Routes> */}
-      <RoomRouting rooms={rooms}/>
+      {/* <RoomRouting rooms={rooms}/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/room/:id" element={<Room rooms={rooms}/>}></Route>
-      </Routes>
+      </Routes> */}
+      {/* <DashBoardLayout/> */}
+
+     <Routes>
+      <Route path="/dashboard" element={<DashBoardLayout/>}>
+        
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact/>} />
+        <Route path="settings" element={<Settings />} />
+      </Route>
+     </Routes>
       
     </div>
   );
