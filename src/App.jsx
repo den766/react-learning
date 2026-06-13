@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Day1Counter from "./experiments/week1/day1-counter/Day1Counter";
 import Footer from "./experiments/week1/day2-components/Footer";
@@ -81,6 +81,11 @@ import ProductsD from "./pages/product";
 import RoomRouting from "./experiments/week5/day3-dynamicrouting/hotelroomsrouting";
 import Room from "./pages/rooms";
 import DashBoardLayout from "./experiments/week5/day4-nestedrouting/nestedrouting";
+import ProtectedRoute from "./experiments/week5/day5-protectedrouting/protectedrouting";
+import ProtectedDashboard from "./experiments/week5/day5-protectedrouting/protectedrouting2";
+import Login from "./pages/login";
+import DemoDashboard1 from "./pages/demodashboard";
+import ProtectedRoute2 from "./experiments/week5/day5-protectedrouting/protectedroute";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -92,11 +97,13 @@ function App() {
   //   setTasks((prev) => prev.filter((_, index) => index !== indexToDelete));
   // }
 
-  const rooms = [
-    { id: 101, type: "Deluxe", price: 2000 },
-    { id: 102, type: "Suite", price: 3500 },
-    { id: 103, type: "Standard", price: 1500 },
-  ];
+  // const rooms = [
+  //   { id: 101, type: "Deluxe", price: 2000 },
+  //   { id: 102, type: "Suite", price: 3500 },
+  //   { id: 103, type: "Standard", price: 1500 },
+  // ];
+
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 
   return (
@@ -197,13 +204,24 @@ function App() {
       </Routes> */}
       {/* <DashBoardLayout/> */}
 
-     <Routes>
+     {/* <Routes>
       <Route path="/dashboard" element={<DashBoardLayout/>}>
-        
+         <Route index element={<h2>Dashboard Home</h2>} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact/>} />
         <Route path="settings" element={<Settings />} />
       </Route>
+     </Routes> */}
+
+     {/* <ProtectedRoute/> */}
+      <ProtectedDashboard/>
+     <Routes>
+      <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>}></Route>
+      <Route path="/dashboard" element={
+         <ProtectedRoute2 isLoggedIn={isLoggedIn}>
+          <DemoDashboard1/>
+         </ProtectedRoute2>
+      }></Route>
      </Routes>
       
     </div>
