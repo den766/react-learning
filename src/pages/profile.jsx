@@ -2,7 +2,7 @@ function Profile2() {
 
       return (
 
-          <h1>Welcom to profile page</h1>
+          <h1>Welcome to profile page</h1>
       )
 }
 

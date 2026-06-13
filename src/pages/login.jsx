@@ -1,5 +1,9 @@
-function Login({ setIsLoggedIn }) {
-  return <button onClick={() => setIsLoggedIn(true)}>Login</button>;
+function Login({ setisLogedIn, isLoggedIn }) {
+  return (
+    <>
+      <button onClick={() => setisLogedIn(!isLoggedIn)}>Login</button>
+    </>
+  );
 }
 
 export default Login;

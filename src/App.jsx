@@ -86,6 +86,7 @@ import ProtectedDashboard from "./experiments/week5/day5-protectedrouting/protec
 import Login from "./pages/login";
 import DemoDashboard1 from "./pages/demodashboard";
 import ProtectedRoute2 from "./experiments/week5/day5-protectedrouting/protectedroute";
+import GuestRouting from "./experiments/week5/day5-protectedrouting/guestrouting";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -103,8 +104,7 @@ function App() {
   //   { id: 103, type: "Standard", price: 1500 },
   // ];
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+  const [isLoggedIn, setisLogedIn] = useState(false);
 
   return (
     <div>
@@ -204,7 +204,7 @@ function App() {
       </Routes> */}
       {/* <DashBoardLayout/> */}
 
-     {/* <Routes>
+      {/* <Routes>
       <Route path="/dashboard" element={<DashBoardLayout/>}>
          <Route index element={<h2>Dashboard Home</h2>} />
         <Route path="about" element={<About />} />
@@ -213,17 +213,46 @@ function App() {
       </Route>
      </Routes> */}
 
-     {/* <ProtectedRoute/> */}
-      <ProtectedDashboard/>
-     <Routes>
-      <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>}></Route>
-      <Route path="/dashboard" element={
-         <ProtectedRoute2 isLoggedIn={isLoggedIn}>
-          <DemoDashboard1/>
-         </ProtectedRoute2>
-      }></Route>
-     </Routes>
-      
+      {/* <ProtectedRoute/> */}
+      <ProtectedDashboard />
+
+      <Routes>
+        <Route
+          path="/login"
+          element={
+            <GuestRouting isLoggedIn={isLoggedIn}>
+              <Login setisLogedIn={setisLogedIn} isLoggedIn={isLoggedIn} />
+            </GuestRouting>
+          }
+        ></Route>
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute2 isLoggedIn={isLoggedIn}>
+              <DemoDashboard1
+                setisLogedIn={setisLogedIn}
+                isLoggedIn={isLoggedIn}
+              />
+            </ProtectedRoute2>
+          }
+        ></Route>
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute2 isLoggedIn={isLoggedIn}>
+              <Profile2 />
+            </ProtectedRoute2>
+          }
+        ></Route>
+        <Route
+          path="/settings"
+          element={
+            <ProtectedRoute2 isLoggedIn={isLoggedIn}>
+              <Settings />
+            </ProtectedRoute2>
+          }
+        ></Route>
+      </Routes>
     </div>
   );
 }
