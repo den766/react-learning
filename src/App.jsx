@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Day1Counter from "./experiments/week1/day1-counter/Day1Counter";
 import Footer from "./experiments/week1/day2-components/Footer";
@@ -87,6 +87,8 @@ import Login from "./pages/login";
 import DemoDashboard1 from "./pages/demodashboard";
 import ProtectedRoute2 from "./experiments/week5/day5-protectedrouting/protectedroute";
 import GuestRouting from "./experiments/week5/day5-protectedrouting/guestrouting";
+import CoutWeek6 from "./experiments/week6/day1-localvsglobalstate/localvsglobal";
+import ExpenseMain from "./experiments/week6/day2-propsdrilling/expensemain";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -104,7 +106,7 @@ function App() {
   //   { id: 103, type: "Standard", price: 1500 },
   // ];
 
-  const [isLoggedIn, setisLogedIn] = useState(false);
+  // const [isLoggedIn, setisLogedIn] = useState(false);
 
   return (
     <div>
@@ -214,9 +216,9 @@ function App() {
      </Routes> */}
 
       {/* <ProtectedRoute/> */}
-      <ProtectedDashboard />
+      {/* <ProtectedDashboard /> */}
 
-      <Routes>
+      {/* <Routes>
         <Route
           path="/login"
           element={
@@ -252,7 +254,10 @@ function App() {
             </ProtectedRoute2>
           }
         ></Route>
-      </Routes>
+      </Routes> */}
+
+      {/* <CoutWeek6/> */}
+      <ExpenseMain/>
     </div>
   );
 }
