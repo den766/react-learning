@@ -89,6 +89,9 @@ import ProtectedRoute2 from "./experiments/week5/day5-protectedrouting/protected
 import GuestRouting from "./experiments/week5/day5-protectedrouting/guestrouting";
 import CoutWeek6 from "./experiments/week6/day1-localvsglobalstate/localvsglobal";
 import ExpenseMain from "./experiments/week6/day2-propsdrilling/expensemain";
+import ThemeProvider from "./context/Themecontent";
+import NavBar3 from "./experiments/week6/day3-contextapi/navbarday3";
+import Profile3 from "./experiments/week6/day3-contextapi/proifleday3";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -257,7 +260,11 @@ function App() {
       </Routes> */}
 
       {/* <CoutWeek6/> */}
-      <ExpenseMain/>
+      {/* <ExpenseMain/> */}
+      <ThemeProvider>
+        <NavBar3/>
+        <Profile3/>
+      </ThemeProvider>
     </div>
   );
 }
