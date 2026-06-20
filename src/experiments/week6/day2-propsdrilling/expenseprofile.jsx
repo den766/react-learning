@@ -1,15 +1,9 @@
-
-
-function ExpesnseProfile({user}) {
-
-
-      return(
-
-         <>
-         <h2>Profile</h2>
-         <p>Logged In user : {user}</p>
-         </>
-      )
+function ExpesnseProfile({ user }) {
+  return (
+    <>
+      <h2>logged in user :{user}</h2>
+    </>
+  );
 }
 
 export default ExpesnseProfile;
