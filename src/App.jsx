@@ -93,6 +93,7 @@ import ThemeProvider from "./context/Themecontent";
 import NavBar3 from "./experiments/week6/day3-contextapi/navbarday3";
 import Profile3 from "./experiments/week6/day3-contextapi/proifleday3";
 import { Themecontent } from "./context/Themecontent";
+import ProfileDay4 from "./experiments/week6/day4-usecontext/profileday4";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -264,7 +265,7 @@ function App() {
       {/* <ExpenseMain/> */}
       <ThemeProvider>
         <NavBar3/>
-        <Profile3/>
+        <ProfileDay4/>
       </ThemeProvider>
     </div>
   );
