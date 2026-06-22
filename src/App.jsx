@@ -92,6 +92,7 @@ import ExpenseMain from "./experiments/week6/day2-propsdrilling/expensemain";
 import ThemeProvider from "./context/Themecontent";
 import NavBar3 from "./experiments/week6/day3-contextapi/navbarday3";
 import Profile3 from "./experiments/week6/day3-contextapi/proifleday3";
+import { Themecontent } from "./context/Themecontent";
 function App() {
   // const [tasks, setTasks] = useState([]);
 

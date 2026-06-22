@@ -1,10 +1,14 @@
+import { Themecontent } from "../../../context/Themecontent";
+import { useContext } from "react";
+function NavBar3() {
 
-function NavBar3(){
+  const data = useContext(Themecontent);
+  console.log(data);
+  
+  return(
 
-      return(
-
-         <h2>Welcome to Navbar</h2>
-      )
+       <h2>{data.theme}</h2>
+  )
 }
 
 export default NavBar3;
