@@ -4,7 +4,21 @@ export const AuthContext = createContext();
 
 function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
-  return <AuthContext.Provider value={{user, setUser}}>{children}</AuthContext.Provider>;
+
+   function login () {
+
+       setUser({
+
+           name : "Ashu"
+       })
+   }
+
+   function logout() {
+
+      setUser(null);
+   }
+
+  return <AuthContext.Provider value={{user, login, logout}}>{children}</AuthContext.Provider>;
 }
 
 export default AuthProvider;
