@@ -94,6 +94,8 @@ import NavBar3 from "./experiments/week6/day3-contextapi/navbarday3";
 import Profile3 from "./experiments/week6/day3-contextapi/proifleday3";
 import { Themecontent } from "./context/Themecontent";
 import ProfileDay4 from "./experiments/week6/day4-usecontext/profileday4";
+import AuthProvider from "./context/AuthContex";
+import NavbarDay5 from "./experiments/week6/day5-authcontext/navbarday5";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -263,10 +265,14 @@ function App() {
 
       {/* <CoutWeek6/> */}
       {/* <ExpenseMain/> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <NavBar3/>
         <ProfileDay4/>
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      <AuthProvider>
+        <NavbarDay5/>
+      </AuthProvider>
     </div>
   );
 }

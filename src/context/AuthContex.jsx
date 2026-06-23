@@ -5,7 +5,7 @@ export const AuthContext = createContext();
 function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
 
-   function login () {
+   function logIn () {
 
        setUser({
 
@@ -13,12 +13,12 @@ function AuthProvider({ children }) {
        })
    }
 
-   function logout() {
+   function logOut() {
 
       setUser(null);
    }
 
-  return <AuthContext.Provider value={{user, login, logout}}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={{user, logIn, logOut}}>{children}</AuthContext.Provider>;
 }
 
 export default AuthProvider;
