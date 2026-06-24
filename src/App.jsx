@@ -96,6 +96,10 @@ import { Themecontent } from "./context/Themecontent";
 import ProfileDay4 from "./experiments/week6/day4-usecontext/profileday4";
 import AuthProvider from "./context/AuthContex";
 import NavbarDay5 from "./experiments/week6/day5-authcontext/navbarday5";
+import AuthProvider2 from "./context/AuthContext2";
+import NavbarDay6 from "./experiments/week6/day5-authcontext/navbarday6";
+import ThemeProvider2 from "./context/ThemeContext2";
+// import DashboardDay6 from "./experiments/week6/day5-authcontext/dashboard6";
 function App() {
   // const [tasks, setTasks] = useState([]);
 
@@ -270,9 +274,16 @@ function App() {
         <ProfileDay4/>
       </ThemeProvider> */}
 
-      <AuthProvider>
+      {/* <AuthProvider>
         <NavbarDay5/>
-      </AuthProvider>
+      </AuthProvider> */}
+
+      <AuthProvider2>
+        <ThemeProvider2>
+          {/* <DashboardDay6/> */}
+          <NavbarDay6 />
+        </ThemeProvider2>
+      </AuthProvider2>
     </div>
   );
 }
