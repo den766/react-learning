@@ -99,6 +99,7 @@ import NavbarDay5 from "./experiments/week6/day5-authcontext/navbarday5";
 import AuthProvider2 from "./context/AuthContext2";
 import NavbarDay6 from "./experiments/week6/day5-authcontext/navbarday6";
 import ThemeProvider2 from "./context/ThemeContext2";
+import AppRender from "./react-InternalsExp/week1/day1/reactrendering";
 // import DashboardDay6 from "./experiments/week6/day5-authcontext/dashboard6";
 function App() {
   // const [tasks, setTasks] = useState([]);
@@ -118,9 +119,11 @@ function App() {
   // ];
 
   // const [isLoggedIn, setisLogedIn] = useState(false);
+  console.log("App rendered");
 
   return (
     <div>
+      <h1>Hello React</h1>
       {/* <Day1Counter /> */}
       {/* <Header />
       <NoteList /> */}
@@ -278,12 +281,14 @@ function App() {
         <NavbarDay5/>
       </AuthProvider> */}
 
-      <AuthProvider2>
-        <ThemeProvider2>
-          {/* <DashboardDay6/> */}
-          <NavbarDay6 />
-        </ThemeProvider2>
-      </AuthProvider2>
+      {/* <AuthProvider2> */}
+      {/* <ThemeProvider2> */}
+      {/* <DashboardDay6/> */}
+      {/* <NavbarDay6 /> */}
+      {/* </ThemeProvider2> */}
+      {/* </AuthProvider2> */}
+
+      <AppRender/>
     </div>
   );
 }
